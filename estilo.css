@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+/*RECODARTORIO CUIDADO AL USAR FLOTANTE PORQE MUEVE EL POSICIONAMIENTO DE LAS CAJAS FUERA DE SU LUGAR DESEADO*/
+.parte-top{
+    height: 12vh;
+    width: 99vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: black;   
+}
+.menu-logo{
+    height: 12vh;
+    width: 49.5vw;
+    font-size: 2.5em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-web{
+    height: 12vh;
+    width: 49.5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+.parte-medio-1{
+    height: 88vh;
+    width: 99vw;
+}
+.parte-medio-2{
+    height: 1000px;
+    width: 99vw;
+}
+/*primero termines de trabjar con la parte del menu*/
+.menu-web a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+.menu-web a:hover{
+    border-bottom: 6px solid white;
+}
+/*cuando termine el menu luego avansaremos el cuerpo*/
+/*trabajando con la PARTE TOP de la parte central*/
+.about1{
+    height: 65%;
+    width: 100%;    
+    display: flex;
+}
+.saludo{
+    height: 100%;
+    width: 100%;    
+    font-size: 3.5em;    
+    font-weight: bold;
+    line-height: 3em;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+.about2{
+    height: 35%;
+    width: 100%;
+    font-size: 2.2em;       
+    display: flex;    
+    justify-content: center;
+    align-items: top;
+}
+
+/*trabajando con la PARTE DEL MEDIO de la parte central*/
+.conocimientos{
+    height: 50%;
+    width: 100%;    
+}
+.lenguajes-nombre{
+    height: 50%;
+    width: 100%;       
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .card{
+    height: 200px;
+    width: 150px;
+    background-color: black;
+    display: block;
+} */
+/* .card > div{
+    font-size: 2rem;    
+    color: white; 
+} */
+.lenguajes-nombre > div{
+    height: 100px;
+    width: 200px;    
+    text-decoration: none;
+    font-size: 2em;
+    margin-left: 100px;
+    background-color: black;
+    box-shadow: 0 14px 18px 0 rgba(0,0,0,0.4), 0 16px 20px 0 rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 10%;    
+    display: flex;
+    flex-direction: column;
+    transition: height 1s;   
+}
+.lenguajes-nombre > div:hover{
+    height: 150px;
+}
+.arriba{
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abajo{
+    height: 50px;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/*trabajando con la PARTE DE ABAJO de la parte central*/
+.proyectos{
+    height: 50%;
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pared{
+    height: 100%;
+    width: 60%;    
+    background-color: gray;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.posteo{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.posteo > a {
+    height: 50%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* trabajando con la PARTE DE PIE DE PAGINA */
+.parte-bot{
+    height: 70px;
+    width: 99vw;
+    background-color: black;    
+    display: flex;
+    justify-content: center;    
+}
+.parte-bot > div{
+    height: 70px;
+    width: 60%;
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: black;
+
+}
+.parte-bot > div > a{
+    color: white;
+    text-decoration: none;
+}
+/* trabajando con los estilos de los proyectos */
+.estado-ganador{
+    height: 100px;
+    width: 100vh;
+    font-size: 4rem;
+    text-align: right;
+}
+.tablero-fila{
+    height: 100px;
+    width: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.cuadrado{    
+    height: 100px;
+    width: 100px;
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+}
