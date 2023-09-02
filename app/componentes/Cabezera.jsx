@@ -16,6 +16,7 @@ function Menu(){
         <nav className="menu-web">
             <a>inicio</a>
             <Link href='./#aqui'>tecnologias</Link>
+            <a>Proyectos</a>
             <Link href='../extra'>contactos</Link>
         </nav>
     );
