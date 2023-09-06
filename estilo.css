@@ -6,7 +6,7 @@
 /*RECODARTORIO CUIDADO AL USAR FLOTANTE PORQE MUEVE EL POSICIONAMIENTO DE LAS CAJAS FUERA DE SU LUGAR DESEADO*/
 .parte-top{
     height: 12vh;
-    width: 99vw;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -28,8 +28,14 @@
     justify-content: space-around;
     align-items: center;    
 }
+.menu-web-movil{
+    display: none;
+}
+.menu-desplegado-movil{
+    display: none;
+}
 .parte-medio-1{
-    height: 88vh;
+    height: 76vh;
     width: 99vw;
 }
 .parte-medio-2{
@@ -61,6 +67,12 @@
     display: flex;    
     justify-content: center;
     align-items: center;
+}
+.saludo > p > span{
+    text-decoration: underline;
+}
+.saludo-movil{
+    display: none;
 }
 .about2{
     height: 35%;
@@ -165,11 +177,13 @@
 }
 /* trabajando con la PARTE DE PIE DE PAGINA */
 .parte-bot{
-    height: 70px;
-    width: 99vw;
-    background-color: black;    
+    height: 12vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
     display: flex;
-    justify-content: center;    
+    justify-content: space-around;
+    align-items: center;
 }
 .parte-bot > div{
     height: 70px;
@@ -181,9 +195,12 @@
     background-color: black;
 
 }
-.parte-bot > div > a{
+.parte-bot > a{
     color: white;
     text-decoration: none;
+}
+.parte-bot-movil{
+    display: none;
 }
 /* trabajando con los estilos de los proyectos */
 .estado-ganador{
@@ -205,4 +222,179 @@
     font-size: 3rem;
     background-color: white;
     border: 1px solid black;
+}
+/* trabajando con media qeria para el tamaño de celular */
+@media screen and (max-width: 400px) {
+    .parte-top{
+        height: 10vh;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }    
+    .menu-logo{
+        height: 100%;
+        width: 75%;
+        display: flex;
+    }
+    .navegador{
+        height: 100%;
+        width: 25%;
+        display: flex;
+    }
+    .menu-web{
+        display: none;
+    }
+    .menu-web-movil{
+        height: 100%;
+        width: 100%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .menu-web-movil > a{
+        display: flex;        
+    }
+    .menu-desplegado-movil{
+        height: 24vh;
+        width: 100vw;
+        background-color: black;
+        position: absolute;
+        top: 100%;        
+        /* left: 75%; */
+        display: none;
+        flex-direction: column;
+    }
+    .menu-desplegado-movil > a{
+        text-decoration: none;
+        height: 33.9%;
+        width: 100%;
+        color: white;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parte-medio-1{
+        height: 85vh;
+        width: 100vw;
+        display: flex;        
+    }
+    .about1{
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+    .saludo{
+        display: none;
+    }
+    .saludo-movil{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .foto-movil{
+        height: 30%;
+        width: 100%;        
+    }
+    .datos-movil{
+        height: 20%;
+        width: 100%;
+        background-color: rgb(32, 39, 66);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .datos-movil-p1{
+        font-size: 2.9rem;
+    }
+    .datos-movil-p2{
+        font-size: 1.5rem;
+    }
+    .contacto-movil{
+        height: 10%;
+        width: 100%;
+        background-color: rgb(32, 39, 66);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contacto-movil > a{
+        height: 70%;
+        width: 35%;
+        text-decoration: none;
+        color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .about-movil{
+        height: 20%;
+        width: 100%;
+        background-color: rgb(32, 39, 66);
+        color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .about-movil-p1{
+        height: 40%;
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 15px;
+    }
+    .about-movil-p2{
+        height: 60%;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .intereses-movil{
+        height: 20%;
+        width: 100%;
+        background-color: rgb(32, 39, 66);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .intereses-movil-p1{
+        height: 20%;
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 15px;
+    }
+    .intereses-movil-p2{
+        height: 80%;
+        width: 100%;
+        padding-left: 10px;
+        padding-top: 15px;
+    }
+
+    .about2{
+        display: none;       
+    }
+    .parte-bot{
+        display: none;
+    }
+    .parte-bot-movil{
+        height: 5vh;
+        width: 100vw;
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .parte-bot-movil > a{
+        color: white;
+    }
 }

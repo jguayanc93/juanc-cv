@@ -8,7 +8,7 @@ export default function Page() {
         <>
         <Cabezera></Cabezera>
         <Presentacion></Presentacion>
-        <Cuerpo></Cuerpo>
+        {/* <Cuerpo></Cuerpo> */}
         <PiedePagina></PiedePagina>
         </>
     );
